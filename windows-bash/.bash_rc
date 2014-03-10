@@ -1,0 +1,138 @@
+# 这里是为 gcc 显示正确的版本信息而设置
+# 但是还是在 mingw32setvar.bat 中临时设置一下算了
+#export LC_ALL=C
+export CYGWIN="nodosfilewarning server"
+
+# 这里是为 cygwin 下的中文列目录设置
+export LESSCHARSET=latin1 
+alias less='/bin/less -r' 
+alias l='/bin/ls --show-control-chars --color=tty'
+alias la='/bin/ls -aF --show-control-chars --color=tty'
+alias ll='/bin/ls -alF --show-control-chars --color=tty'
+alias ls='/bin/ls --show-control-chars -F --color=tty'
+
+# 这里是设置 postgresql 而设置
+
+export PGDATA=/usr/local/pgsql/data
+export PGCLIENTENCODING=EUC_CN
+
+PATH="/usr/sbin:/sbin:/usr/bin:${PATH}:/d/dev/gnuwin32/bin:/cygdrive/d/dev/gnuwin32/bin"
+export PATH 
+
+alias hd="od -Ax -tx1z -v"
+
+# 这里是为 msys in here 准备的
+if [ ! -z "${MHERE_INVOKING}" ]; then
+  MHERE_INVOKING=${MHERE_INVOKING//\\/\/}
+  MHERE_INVOKING=${MHERE_INVOKING//\"/}
+
+  cd $MHERE_INVOKING
+else
+  cd "${HOME}" || echo "WARNING: Failed attempt to cd into ${HOME}!"
+fi
+
+if [ ! -z "${FROMEMACS}" ]; then
+
+# 这里开始是为 emacs 下用 msys 登录准备
+GREP_OPTIONS="--exclude-dir=\.svn --exclude=*.class --exclude-dir=classes --exclude=*.doc --exclude=*.csv --exclude=TAGS"
+export GREP_OPTIONS
+# 设置颜色
+LS_COLORS='no=00:fi=00:di=01;37;44:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mng=01;35:*.xcf=01;35:*.pcx=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.avi=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.mov=01;35:*.qt=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.mp3=01;32:*.wav=01;32:*.mid=01;32:*.midi=01;32:*.au=01;32:*.ogg=01;32:*.flac=01;32:*.aac=01;32:';
+export LS_COLORS 
+
+
+# export LANG=zh_CN.UTF-8
+# export LC_CTYPE="zh_CN.UTF-8"
+# export LC_NUMERIC="zh_CN.UTF-8"
+# export LC_TIME="zh_CN.UTF-8"
+# export LC_COLLATE="zh_CN.UTF-8"
+# export LC_MONETARY="zh_CN.UTF-8"
+# export LC_MESSAGES="zh_CN.UTF-8"
+# export LC_ALL="zh_CN.UTF-8"
+# alias ls='ls --show-control-chars -F --color=tty'
+alias ls="ls --color  --show-control-chars -F"
+alias la="ls -a --color=auto"
+alias ll="ls -lh --color=auto"
+alias rm="rm -r"
+alias cp="cp -r"
+alias ps="ps -ef -W"
+alias pp="ps -ef -W |grep"
+alias ..="cd .."
+alias cd..="cd .."
+
+
+export LANG=zh_CN.UTF-8
+export LC_CTYPE="zh_CN.UTF-8"
+export LC_NUMERIC="zh_CN.UTF-8"
+export LC_TIME="zh_CN.UTF-8"
+export LC_COLLATE="zh_CN.UTF-8"
+export LC_MONETARY="zh_CN.UTF-8"
+export LC_MESSAGES="zh_CN.UTF-8"
+export LC_ALL="zh_CN.UTF-8"
+
+#这里为emacs及正常的cygwin ,或mssy 设置不同的PS1
+case $TERM in
+cygwin)
+export PS1='\[\033]0;$MSYSTEM:\w\007
+\033[32m\]\u@\h \[\033[33m\w\033[0m\]
+$ '
+;;
+*)
+export PS1='\W\$ ' # for emacs and others 
+;;
+esac
+
+fi
+
+# Note: ~/.ssh/environment should not be used, as it
+#       already has a different purpose in SSH.
+
+env=~/.ssh/agent.env
+
+# Note: Don't bother checking SSH_AGENT_PID. It's not used
+#       by SSH itself, and it might even be incorrect
+#       (for example, when using agent-forwarding over SSH).
+
+agent_is_running() {
+    if [ "$SSH_AUTH_SOCK" ]; then
+        # ssh-add returns:
+        #   0 = agent running, has keys
+        #   1 = agent running, no keys
+        #   2 = agent not running
+        # if your keys are not stored in ~/.ssh/id_rsa.pub or ~/.ssh/id_dsa.pub, you'll need
+        # to paste the proper path after ssh-add
+        ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
+    else
+        false
+    fi
+}
+
+agent_has_keys() {
+    # if your keys are not stored in ~/.ssh/id_rsa.pub or ~/.ssh/id_dsa.pub, you'll need
+    # to paste the proper path after ssh-add
+    ssh-add -l >/dev/null 2>&1
+}
+
+agent_load_env() {
+    . "$env" >/dev/null
+}
+
+agent_start() {
+    (umask 077; ssh-agent >"$env")
+    . "$env" >/dev/null
+}
+
+if ! agent_is_running; then
+    agent_load_env
+fi
+
+# if your keys are not stored in ~/.ssh/id_rsa.pub or ~/.ssh/id_dsa.pub, you'll need
+# to paste the proper path after ssh-add
+if ! agent_is_running; then
+    agent_start
+    ssh-add
+elif ! agent_has_keys; then
+    ssh-add
+fi
+
+unset env
