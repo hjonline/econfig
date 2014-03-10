@@ -1,0 +1,19 @@
+export PATH=~/bin:/sbin:/opt/kompozer:$PATH
+export LANG=zh_CN.utf-8
+export XMODIFIERS=@im=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+
+export STARDICT_DATA_DIR=/media/sf_slkshare/emacs/.stardict
+
+#ROOT=~/bin
+#$ROOT/usssh.sh > /dev/null 2>&1 &
+
+#~/bin/notifq.sh &
+ps aux|grep "[e]macs -daemon"
+if  [ $? -eq 0 ] 
+   then
+	echo "we are using emacs daemon"
+   else 
+	emacs --daemon
+fi
