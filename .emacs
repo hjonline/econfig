@@ -1,0 +1,1 @@
+(load-file "e:/slkshare/emacs/econfig/emacs-init.el")

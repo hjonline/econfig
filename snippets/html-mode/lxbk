@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: lxbk
+# --
+      <li><a href="$1" target="_blank">$2</a> </li> <!-- $3   -->
