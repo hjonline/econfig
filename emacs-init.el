@@ -117,3 +117,8 @@
 ; 使用 server mode
 (require 'set-servermode)
 ))
+
+; 使用 php 模式
+(require 'php-mode)
+(require 'php-extras)
+(require 'php-auto-yasnippets)
