@@ -122,3 +122,6 @@
 (require 'php-mode)
 (require 'php-extras)
 (require 'php-auto-yasnippets)
+
+; 使用 newlisp 模式
+(require 'mynewlisp)
