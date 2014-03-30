@@ -20,6 +20,8 @@
 (if (string= system-name "WWW-3566B3356BC")
   (setq my_dev "c:"))
 (if (string= system-name "CHINA-936728572")
+  (setq my_dev "d:/dev")
+(if (string= system-name "HOME-B75")
   (setq my_dev "d:/dev"))
   
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d"))
