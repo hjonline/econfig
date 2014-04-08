@@ -127,3 +127,6 @@
 
 ; 使用 newlisp 模式
 (require 'mynewlisp)
+
+; 使用 folding
+(require 'yoyo-folding)
