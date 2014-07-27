@@ -23,6 +23,8 @@
   (setq my_dev "d:/dev"))
 (if (string= system-name "HOME-B75")
   (setq my_dev "d:/dev"))
+(if (string= system-name "HOME-C17699D350")
+  (setq my_dev "d:/dev"))
   
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d"))
 (setq econfig-dir (concat slkshareemacs-dir "/econfig"))
