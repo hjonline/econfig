@@ -1,0 +1,5 @@
+# name: extends
+# -*- mode: snippet -*-
+# --
+extends qw/$1/;
+$0
