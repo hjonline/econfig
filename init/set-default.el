@@ -70,6 +70,7 @@
 
 ;; 加入会话功能
 (require 'session)
+(setq session-save-file-coding-system 'utf-8-unix)
 (add-hook 'after-init-hook 'session-initialize)
 (load "desktop")
 (desktop-save-mode)
@@ -154,3 +155,4 @@
 
 ;; 成对的括号自动补全
 (electric-pair-mode 1)
+
