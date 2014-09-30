@@ -1,4 +1,4 @@
-;; This is the main Emacs initialization file - .emacs.
+; This is the main Emacs initialization file - .emacs.
 
 (if (eq system-type 'windows-nt)
 
@@ -6,7 +6,7 @@
 (setq slkshareemacs-dir "e:/slkshare/emacs")
 (setq tramp-win-exe "~/tools/ftp.exe")
 
-;; 设置自己的 info 目录
+; 设置自己的 info 目录
 (add-to-list 'Info-default-directory-list "D:/dev/mingw/msys/1.0/local/info")
 
 
@@ -34,7 +34,7 @@
 (setq blackboard-theme (concat lisp-dir "/themes/color-theme-blackboard.el"))
 (setq yas-snippet-dirs (concat econfig-dir "/snippets"))
 (setq saves-dir (concat slkshareemacs-dir "/saves"))
-;; elpa 包管理器目录 
+; elpa 包管理器目录 
 (setq package-user-dir (concat dotemacs-dir "/elpa"))
 (setq doxymacs-dir (concat econfig-dir "/lisp/doxymacs"))
 
