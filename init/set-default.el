@@ -6,7 +6,8 @@
       ;; '((height . 39) (width . 158)))
 
 ; 设置打开文件的缺省路径
-(setq default-directory "~/")
+(setq default-directory "E:/slkshare/emacs/.emacs.d")
+(setq user-emacs-directory "E:/slkshare/emacs/.emacs.d")
 
 ; 让 echo-buffer 不要截断输出
 (setq eval-expression-print-length nil)
