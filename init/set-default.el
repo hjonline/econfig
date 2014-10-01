@@ -7,7 +7,7 @@
 
 ; 设置打开文件的缺省路径
 (setq default-directory "~/")
-(setq user-emacs-directory "E:/slkshare/emacs/.emacs.d")
+(setq user-emacs-directory dotemacs-dir)
 (delete-directory "~/.emacs.d")
 
 ; 让 echo-buffer 不要截断输出
@@ -60,12 +60,15 @@
 ;;backup setting
 (setq
  backup-by-copying t ; don't clobber symlinks
- backup-directory-alist
- '(("." . saves-dir)) ; don't litter my fs tree
+ auto-save-list-file-prefix (concat dotemacs-dir "auto-save-list/.saves-")
  delete-old-versions t
  kept-new-versions 6
  kept-old-versions 2
  version-control t) ; use versioned backups
+ 
+(add-to-list 'backup-directory-alist
+ (cons "." (concat dotemacs-dir "auto-save-list")))   ; don't litter my fs tree
+
 
 ;; ; 日记文件
 ;; (setq diary-file "~/diary")

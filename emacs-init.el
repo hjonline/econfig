@@ -26,7 +26,7 @@
 (if (string= system-name "HOME-C17699D350")
   (setq my_dev "d:/dev"))
   
-(setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d"))
+(setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
 (setq econfig-dir (concat slkshareemacs-dir "/econfig"))
 (setq lisp-dir (concat slkshareemacs-dir "/lisp"))
 (add-to-list 'load-path (expand-file-name lisp-dir))
