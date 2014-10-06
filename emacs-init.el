@@ -118,9 +118,9 @@
 (progn
 ; 使用 msys 作为 shell
 (require 'set-myshell)
+))
 ; 使用 server mode
 (require 'set-servermode)
-))
 
 ; 使用 php 模式
 (require 'php-mode)
