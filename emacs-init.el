@@ -1,26 +1,23 @@
 ; This is the main Emacs initialization file - .emacs.
 
-(if (eq system-type 'windows-nt)
 
-( progn  
-(setq slkshareemacs-dir "e:/slkshare/emacs")
-(setq tramp-win-exe "~/tools/ftp.exe")
-
-; 设置自己的 info 目录
-(add-to-list 'Info-default-directory-list "D:/dev/mingw/msys/1.0/local/info")
-
-
-)
 (if (eq system-type 'gnu/linux)
 (progn
 (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
 
-)))
+))
 
 (if (string= system-name "WWW-3566B3356BC")
-  (setq my_dev "c:"))
+(progn
+  (setq my_dev "c:")
+  (setq slkshareemacs-dir "d:/dev/emacs-setup")
+  (setq tramp-win-exe "~/tools/ftp.exe")
+  (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
 (if (string= system-name "CHINA-936728572")
-  (setq my_dev "d:/dev"))
+(progn
+  (setq my_dev "d:/dev")
+  (setq tramp-win-exe "~/tools/ftp.exe")
+  (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 (if (string= system-name "HOME-B75")
   (setq my_dev "d:/dev"))
 (if (string= system-name "HOME-C17699D350")
