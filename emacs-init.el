@@ -1,10 +1,7 @@
 ; This is the main Emacs initialization file - .emacs.
-
-
 (if (eq system-type 'gnu/linux)
 (progn
 (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
-
 ))
 
 (if (string= system-name "WWW-3566B3356BC")
@@ -22,7 +19,8 @@
   (setq my_dev "d:/dev"))
 (if (string= system-name "HOME-C17699D350")
   (setq my_dev "d:/dev"))
-  
+
+
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
 (setq econfig-dir (concat slkshareemacs-dir "/econfig"))
 (setq lisp-dir (concat slkshareemacs-dir "/lisp"))
@@ -115,9 +113,9 @@
 (progn
 ; 使用 msys 作为 shell
 (require 'set-myshell)
+))
 ; 使用 server mode
 (require 'set-servermode)
-))
 
 ; 使用 php 模式
 (require 'php-mode)
