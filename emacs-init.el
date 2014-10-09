@@ -14,11 +14,16 @@
 (progn
   (setq my_dev "d:/dev")
   (setq tramp-win-exe "~/tools/ftp.exe")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 (if (string= system-name "HOME-B75")
-  (setq my_dev "d:/dev"))
+(progn
+  (setq my_dev "d:/dev")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")))
 (if (string= system-name "HOME-C17699D350")
-  (setq my_dev "d:/dev"))
+(progn
+  (setq my_dev "d:/dev")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")))
 
 
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
