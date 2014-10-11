@@ -42,7 +42,7 @@
 ; elpa 包管理器目录 
 (setq package-user-dir (concat dotemacs-dir "/elpa"))
 (setq doxymacs-dir (concat econfig-dir "/lisp/doxymacs"))
-
+(setq sdcv-cmd (concat "sdcv --data-dir " slkshareemacs-dir "/.stardict/dic -n %s %s"))
 
 ; 加载 elpa 包管理器
 (require 'package)
