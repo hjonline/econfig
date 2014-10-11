@@ -7,6 +7,7 @@
 (if (string= system-name 'z68.org)
 (progn
 (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
+(setq dotstardict-dir slkshareemacs-dir)
 ))
 
 (if (string= system-name "WWW-3566B3356BC")
@@ -20,6 +21,7 @@
   (setq my_dev "d:/dev")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (setq slkshareemacs-dir "e:/slkshare/emacs")
+  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 (if (string= system-name "HOME-B75")
 (progn
@@ -42,7 +44,7 @@
 ; elpa 包管理器目录 
 (setq package-user-dir (concat dotemacs-dir "/elpa"))
 (setq doxymacs-dir (concat econfig-dir "/lisp/doxymacs"))
-(setq sdcv-cmd (concat "sdcv --data-dir " slkshareemacs-dir "/.stardict/dic -n %s %s"))
+(setq sdcv-cmd (concat "sdcv --data-dir " dotstardict-dir "/.stardict/dic -n %s %s"))
 
 ; 加载 elpa 包管理器
 (require 'package)
