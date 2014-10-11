@@ -28,7 +28,7 @@
 (if (string= system-name "HOME-C17699D350")
 (progn
   (setq my_dev "d:/dev")
-  (setq slkshareemacs-dir "e:/slkshare/emacs")))
+  (setq slkshareemacs-dir "/cygdrive/e/slkshare/emacs")))
 
 
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
