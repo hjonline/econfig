@@ -1,7 +1,12 @@
 ; This is the main Emacs initialization file - .emacs.
-(if (eq system-type 'gnu/linux)
+;(if (eq system-type 'gnu/linux)
+;(progn
+;(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+;))
+
+(if (string= system-name 'z68.org)
 (progn
-(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+(setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
 ))
 
 (if (string= system-name "WWW-3566B3356BC")
