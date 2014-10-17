@@ -31,6 +31,13 @@
 (progn
   (setq my_dev "d:/dev")
   (setq slkshareemacs-dir "/cygdrive/e/slkshare/emacs")))
+(if (string= system-name "CHINA-29D74A95B")
+(progn
+  (setq my_dev "c:")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")
+  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+  (setq tramp-win-exe "~/tools/ftp.exe")
+  (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
 
 
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
