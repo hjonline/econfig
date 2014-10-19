@@ -9,6 +9,11 @@
 (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
 (setq dotstardict-dir slkshareemacs-dir)
 ))
+(if (string= system-name 'darkstar.org)
+(progn
+(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+(setq dotstardict-dir slkshareemacs-dir)
+))
 
 (if (string= system-name "WWW-3566B3356BC")
 (progn
