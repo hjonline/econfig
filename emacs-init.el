@@ -14,6 +14,11 @@
 (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
 (setq dotstardict-dir slkshareemacs-dir)
 ))
+(if (string= system-name 'jessie.net)
+(progn
+(setq slkshareemacs-dir "/home/hj18/slkshare/emacs-setup")
+(setq dotstardict-dir slkshareemacs-dir)
+))
 (if (string= system-name 'debian)
 (progn
 (setq slkshareemacs-dir "/home/hj18/slkshare/emacs")
