@@ -41,7 +41,7 @@
 (if (string= system-name "PC-201501262042")
 (progn
   (setq my_dev "d:/dev")
-  (setq slkshareemacs-dir "e:/slkshare/emacs-setup")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
