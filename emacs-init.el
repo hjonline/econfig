@@ -73,7 +73,13 @@
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
-
+(if (string= system-name "CHINA-A54D9E712")
+(progn
+  (setq my_dev "d:/dev")
+  (setq slkshareemacs-dir "g:/slkshare/emacs")
+  (setq tramp-win-exe "~/tools/ftp.exe")
+  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+  (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
 
 (setq dotemacs-dir (concat slkshareemacs-dir "/.emacs.d/"))
 (setq econfig-dir (concat slkshareemacs-dir "/econfig"))
