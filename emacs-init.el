@@ -87,7 +87,6 @@
 (add-to-list 'load-path (expand-file-name lisp-dir))
 (add-to-list 'load-path (concat econfig-dir "/init"))
 (setq blackboard-theme (concat lisp-dir "/themes/color-theme-blackboard.el"))
-(setq yas-snippet-dirs (concat econfig-dir "/snippets"))
 (setq saves-dir (concat slkshareemacs-dir "/saves"))
 ; elpa 包管理器目录 
 (setq package-user-dir (concat dotemacs-dir "/elpa"))

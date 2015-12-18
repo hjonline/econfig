@@ -1,3 +1,0 @@
-# name: perl print
-# --
-print $1 . "\n";

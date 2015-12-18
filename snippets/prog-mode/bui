@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-# name: builder => ...
-# --
-builder => '${1:_build_`(find-attribute-name)`}',

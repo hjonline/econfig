@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-# name: writer => ...
-# --
-writer => '${1:set_`(find-attribute-name)`}',

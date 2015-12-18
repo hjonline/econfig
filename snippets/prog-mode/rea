@@ -1,4 +1,0 @@
-# -*- mode: snippet -*-
-# name: reader => ...
-# --
-reader => '${1:get_`(find-attribute-name)`}',
