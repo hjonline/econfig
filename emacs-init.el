@@ -3,7 +3,12 @@
 ;(progn
 ;(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
 ;))
-
+(if (string= system-name 'b75.b75.org)
+(progn
+  (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
+  (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
 (if (string= system-name 'z68.org)
 (progn
 (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
@@ -179,9 +184,9 @@
 (progn
 ; 使用 msys 作为 shell
 (require 'set-myshell)
-))
 ; 使用 server mode
 (require 'set-servermode)
+))
 
 ; 使用 php 模式
 (require 'php-mode)
