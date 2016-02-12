@@ -71,6 +71,13 @@
   (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
+  (if (string= system-name "DOSTYLE")
+(progn
+  (setq my_dev "d:/dev")
+  (setq tramp-win-exe "~/tools/ftp.exe")
+  (setq slkshareemacs-dir "e:/slkshare/emacs")
+  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+  (add-to-list 'Info-default-directory-list "D:\dev\msys64\usr\share\info\")))
 (if (string= system-name "HOME-C17699D350")
 (progn
   (setq my_dev "d:/dev")
@@ -189,9 +196,9 @@
 ))
 
 ; 使用 php 模式
-(require 'php-mode)
-(require 'php-extras)
-(require 'php-auto-yasnippets)
+;(require 'php-mode)
+;(require 'php-extras)
+;(require 'php-auto-yasnippets)
 
 ; 使用 newlisp 模式
 (require 'mynewlisp)
