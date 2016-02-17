@@ -77,7 +77,7 @@
   (setq tramp-win-exe "~/tools/ftp.exe")
   (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-  (add-to-list 'Info-default-directory-list "D:\dev\msys64\usr\share\info\")))
+  (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
 (if (string= system-name "HOME-C17699D350")
 (progn
   (setq my_dev "d:/dev")
