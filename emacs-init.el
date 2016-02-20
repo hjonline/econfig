@@ -10,6 +10,12 @@
   (setq dotstardict-dir slkshareemacs-dir)
   )
 )
+(if (string= system-name 'slk64.net)
+(progn
+  (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
+  (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
 
 (if (string= system-name 'b75.b75.org)
 (progn
