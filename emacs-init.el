@@ -3,6 +3,14 @@
 ;(progn
 ;(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
 ;))
+
+(if (string= system-name 'deb64.net)
+(progn
+  (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
+  (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
+
 (if (string= system-name 'b75.b75.org)
 (progn
   (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
@@ -176,8 +184,10 @@
 ;(require 'set-mytex)
 
 ; 使用 lisp
-(require 'set-mylisp)
-
+(if (eq system-type 'windows-nt)
+    (progn
+      (require 'set-mylisp)
+))
 ; 使用 cperl 模式
 (defalias 'perl-mode 'cperl-mode)
 
