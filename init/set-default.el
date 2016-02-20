@@ -59,16 +59,16 @@
 
 ;;backup setting
 (setq make-backup-files nil)
-;(setq
-; backup-by-copying t ; don't clobber symlinks
-; auto-save-list-file-prefix (concat dotemacs-dir "auto-save-list/.saves-")
-; delete-old-versions t
-; kept-new-versions 6
-; kept-old-versions 2
-; version-control t) ; use versioned backups
+(setq
+ backup-by-copying t ; don't clobber symlinks
+ auto-save-list-file-prefix (concat dotemacs-dir "auto-save-list/.saves-")
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-versions 2
+ version-control t) ; use versioned backups
  
-;(add-to-list 'backup-directory-alist
-; (cons "." (concat dotemacs-dir "auto-save-list")))   ; don't litter my fs tree
+(add-to-list 'backup-directory-alist
+ (cons "." (concat dotemacs-dir "auto-save-list")))   ; don't litter my fs tree
 
 
 ;; ; 日记文件
