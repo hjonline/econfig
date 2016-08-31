@@ -17,7 +17,7 @@
   )
 )
 
-(if (string= system-name 'b75.b75.org)
+(if (string= system-name 'b75-slack.net)
 (progn
   (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
   (setq dotstardict-dir slkshareemacs-dir)
