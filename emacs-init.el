@@ -5,44 +5,60 @@
 ;))
 
 (if (string= system-name 'deb64.net)
-(progn
-  (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
-  (setq dotstardict-dir slkshareemacs-dir)
+  (progn
+    (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
   )
 )
+
 (if (string= system-name 'slk64.net)
-(progn
-  (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
-  (setq dotstardict-dir slkshareemacs-dir)
+  (progn
+    (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
   )
 )
 
 (if (string= system-name 'b75-slack.net)
-(progn
-  (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
-  (setq dotstardict-dir slkshareemacs-dir)
+  (progn
+    (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
   )
 )
+
 (if (string= system-name 'z68.org)
-(progn
-(setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
-(setq dotstardict-dir slkshareemacs-dir)
-))
+  (progn
+    (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
+
 (if (string= system-name 'darkstar.org)
-(progn
-(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
-(setq dotstardict-dir slkshareemacs-dir)
-))
+  (progn
+    (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
+
 (if (string= system-name 'jessie.net)
-(progn
-(setq slkshareemacs-dir "/home/hj18/slkshare/emacs-setup")
-(setq dotstardict-dir slkshareemacs-dir)
-))
+  (progn
+    (setq slkshareemacs-dir "/home/hj18/slkshare/emacs-setup")
+    (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
+
 (if (string= system-name 'debian)
-(progn
-(setq slkshareemacs-dir "/home/hj18/slkshare/emacs")
-(setq dotstardict-dir slkshareemacs-dir)
-))
+  (progn
+    (setq slkshareemacs-dir "/home/hj18/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
+
+(if (string= system-name 'slk_office.net)
+  (progn
+    (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
+    (setq dotstardict-dir slkshareemacs-dir)
+  )
+)
 
 (if (string= system-name "WWW-3566B3356BC")
 (progn
