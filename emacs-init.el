@@ -18,14 +18,14 @@
   )
 )
 
-(if (string= system-name 'b75-slack.net)
+(if (string= system-name 'b75-slack)
   (progn
     (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
     (setq dotstardict-dir slkshareemacs-dir)
   )
 )
 
-(if (string= system-name 'z68.org)
+(if (string= system-name 'z68)
   (progn
     (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
     (setq dotstardict-dir slkshareemacs-dir)
