@@ -18,6 +18,7 @@
   )
 )
 
+; B75 上的实机 slackware 
 (if (string= system-name 'b75-slack)
   (progn
     (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
@@ -25,6 +26,7 @@
   )
 )
 
+; Z68 上的实机 slackware 
 (if (string= system-name 'z68)
   (progn
     (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
@@ -53,6 +55,7 @@
   )
 )
 
+; office 虚拟机上的 slackware
 (if (string= system-name 'slk_office.net)
   (progn
     (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
@@ -60,40 +63,16 @@
   )
 )
 
-(if (string= system-name "WWW-3566B3356BC")
-(progn
-  (setq my_dev "c:")
-  (setq slkshareemacs-dir "d:/dev/emacs-setup")
-  (setq tramp-win-exe "~/tools/ftp.exe")
-  (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
-(if (string= system-name "CHINA-1434A81FB")
-(progn
-  (setq my_dev "d:/dev")
-  (setq slkshareemacs-dir "e:/slkshare/emacs-setup")
-  (setq tramp-win-exe "~/tools/ftp.exe")
-  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
-  (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
-(if (string= system-name "PC-201501262042")
+; Z68 上的 windows 10
+(if (string= system-name "Z68")
 (progn
   (setq my_dev "d:/dev")
   (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
-  (if (string= system-name "Z68")
-(progn
-  (setq my_dev "d:/dev")
-  (setq slkshareemacs-dir "e:/slkshare/emacs")
-  (setq tramp-win-exe "~/tools/ftp.exe")
-  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
-  (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
-(if (string= system-name "CHINA-936728572")
-(progn
-  (setq my_dev "d:/dev")
-  (setq tramp-win-exe "~/tools/ftp.exe")
-  (setq slkshareemacs-dir "e:/slkshare/emacs")
-  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-  (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
+
+; B75 上的 windows 10
 (if (string= system-name "HOME-B75")
 (progn
   (setq my_dev "d:/dev")
@@ -101,20 +80,17 @@
   (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
-  (if (string= system-name "DOSTYLE")
+
+; 华硕 DOSTYLE 上的 windows 10
+(if (string= system-name "DOSTYLE")
 (progn
   (setq my_dev "d:/dev")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (setq slkshareemacs-dir "e:/slkshare/emacs")
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
-(if (string= system-name "HOME-C17699D350")
-(progn
-  (setq my_dev "d:/dev")
-  (setq tramp-win-exe "~/tools/ftp.exe")
-  (setq slkshareemacs-dir "e:/slkshare/emacs")
-  (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-  (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
+
+; 准备室上的 windows 10
 (if (string= system-name "READYROOM")
 (progn
   (setq my_dev "c:")
@@ -122,6 +98,8 @@
   (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
   (setq tramp-win-exe "~/tools/ftp.exe")
   (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
+
+; 办公室的 windows 10
 (if (string= system-name "OFFICE")
 (progn
   (setq my_dev "d:/dev")
