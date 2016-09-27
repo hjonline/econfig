@@ -36,7 +36,7 @@
 					; 准备室上的 windows 10
 (if (string= system-name "READYROOM")
     (progn
-      (setq my_dev "d:")
+      (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
