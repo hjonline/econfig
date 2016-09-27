@@ -36,11 +36,11 @@
 					; 准备室上的 windows 10
 (if (string= system-name "READYROOM")
     (progn
-      (setq my_dev "c:")
+      (setq my_dev "d:")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (add-to-list 'Info-default-directory-list "c:/mingw/msys/1.0/local/info")))
+      (add-to-list 'Info-default-directory-list "d:/mingw/msys/1.0/local/info")))
 
 					; 办公室的 windows 10
 (if (string= system-name "OFFICE")
