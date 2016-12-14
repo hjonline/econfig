@@ -55,9 +55,9 @@
 (if (string= system-name "HPG3")
     (progn
       (setq my_dev "c:")
-      (setq slkshareemacs-dir "e:/slkshare/emacs")
+      (setq slkshareemacs-dir "g:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/g/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")))
 
 
