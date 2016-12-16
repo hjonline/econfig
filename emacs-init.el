@@ -7,7 +7,7 @@
 
 					;;;;;;; 实机 windows
 					; Z68 上的 windows 10
-(if (string= system-name "Z68")
+(if (string= system-name "HOME-Z68")
     (progn
       (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
