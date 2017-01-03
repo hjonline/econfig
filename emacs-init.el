@@ -54,7 +54,7 @@
 					; hp g3 的 windows 10
 (if (string= system-name "HPG3")
     (progn
-      (setq my_dev "c:")
+      (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "g:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq dotstardict-dir "/cygdrive/g/slkshare/emacs")
