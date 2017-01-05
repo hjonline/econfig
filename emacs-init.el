@@ -192,6 +192,9 @@
 ))
 ; 使用 cperl 模式
 (defalias 'perl-mode 'cperl-mode)
+(if (string= system-name "HOME-B75")
+     (add-hook 'cperl-mode-hook
+      (define-key cperl-mode-map (kbd "C") nil)))
 
 (if (eq system-type 'gnu/linux)
 (progn
