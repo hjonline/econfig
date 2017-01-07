@@ -190,10 +190,6 @@
     (progn
       (require 'set-mylisp)
 ))
-; 使用 cperl 模式
-(defalias 'perl-mode 'cperl-mode)
-(add-hook 'cperl-mode-hook
-	  (define-key cperl-mode-map (kbd "C") nil))
 
 (if (eq system-type 'gnu/linux)
 (progn
@@ -219,3 +215,8 @@
 
 ; 使用 folding
 (require 'yoyo-folding)
+
+; 使用 cperl 模式
+(defalias 'perl-mode 'cperl-mode)
+(with-eval-after-load 'perl-mode
+  (define-key cperl-mode-map (kbd "C") nil))
