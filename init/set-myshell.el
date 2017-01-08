@@ -11,19 +11,19 @@
   (interactive)
   (if (string-equal explicit-shell-file-name my_old_cmd)
       (progn 
-	(setq shell-file-name my_msys_cmd)
-	(setq explicit-shell-file-name  shell-file-name) 
-	(setq ediff-shell               shell-file-name)    ; Ediff shell
-	(setq explicit-shell-args       '("--login" "-i"))
-	(setenv "SHELL" shell-file-name)
+	(setq explicit-shell-file-name my_msys_cmd)
+	(setq shell-file-name  "bash") 
+	(setq ediff-shell   explicit-shell-file-name)    ; Ediff shell
+	(setq explicit-shell-args       '("--noediting" "--login" "-i"))
+	(setenv "SHELL" explicit-shell-file-name)
 	(setenv "PATH" "/usr/sbin:/sbin:/usr/bin:.:/usr/local/bin:/mingw/bin:/bin:~/bin:/d/dev/UnxUtils/bin")
 	)
     (progn
-      (setq shell-file-name my_old_cmd)
-      (setq explicit-shell-file-name  shell-file-name) 
-      (setq ediff-shell               shell-file-name)    ; Ediff shell
+      (setq explicit-shell-file-name my_old_cmd)
+      (setq shell-file-name  explicit-shell-file-name) 
+      (setq ediff-shell     explicit-shell-file-name)    ; Ediff shell
       (setq explicit-shell-args       nil)
-      (setenv "SHELL" shell-file-name)
+      (setenv "SHELL" explicit-shell-file-name)
       (setenv "PATH" my_old_cmd_path))
     ))
 
