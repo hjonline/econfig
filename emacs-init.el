@@ -7,6 +7,9 @@
 (if (eq system-type 'windows-nt)
     (progn
 					; 使用 gnuwin32 的工具
+      (setenv "PATH" (concat "D:\\dev\\gnuwin32\\bin;" (getenv "PATH")))
+      (setq find-program "D:\\dev\\gnuwin32\\bin\\find.exe"
+            grep-program "D:\\dev\\gnuwin32\\bin\\grep.exe")
       (setq my_c_path "C:")
       ))
 
