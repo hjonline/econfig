@@ -1,7 +1,7 @@
 ; 使用 msys 作为 shell
 (provide 'set-myshell)
 
-(setq my_msys_cmd (concat my_dev "/mingw/msys/1.0/bin/bash.exe"))
+(setq my_msys_cmd (concat my_c_path "/mingw/msys/1.0/bin/bash.exe"))
 (setq my_old_cmd_path (getenv "PATH"))
 (setq my_old_cmd  (concat (getenv "EMACS_DIR") "/bin/cmdproxy.exe"))
 (global-set-key [C-f1] 'msys_bash)
