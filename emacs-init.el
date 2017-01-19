@@ -7,7 +7,8 @@
 (if (eq system-type 'windows-nt)
     (progn
 					; 使用 mingw 的 msys 的工具
-      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
+      (add-to-list 'exec-path "D:/dev/msys64/usr/bin/")
+;      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
       (setq my_c_path "C:")
       ))
 
