@@ -6,10 +6,8 @@
 
 (if (eq system-type 'windows-nt)
     (progn
-					; 使用 gnuwin32 的工具
-      (setenv "PATH" (concat "D:\\dev\\gnuwin32\\bin;" (getenv "PATH")))
-      (setq find-program "D:\\dev\\gnuwin32\\bin\\find.exe"
-            grep-program "D:\\dev\\gnuwin32\\bin\\grep.exe")
+					; 使用 mingw 的 msys 的工具
+      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
       (setq my_c_path "C:")
       ))
 
