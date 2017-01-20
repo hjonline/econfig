@@ -229,3 +229,9 @@
 (defalias 'perl-mode 'cperl-mode)
 (with-eval-after-load 'perl-mode
   (define-key cperl-mode-map (kbd "C") nil))
+
+					;使用 ido-mode
+(require 'set-myido)
+
+					;使用 iedit-mode
+(require 'set-myiedit)
