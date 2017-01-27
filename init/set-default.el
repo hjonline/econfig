@@ -162,3 +162,8 @@
 ;; 成对的括号自动补全
 (electric-pair-mode 1)
 
+
+; 不要保存字体，以免出现
+; Error (frameset): Font ‘tty’ is not defined
+
+(setq desktop-restore-frames nil)
