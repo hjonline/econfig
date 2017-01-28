@@ -103,6 +103,13 @@
       (setq dotstardict-dir slkshareemacs-dir)
       )
     )
+                                        ; hpg3 上的实机 debian 
+(if (string= system-name 'hg-deb)
+    (progn
+      (setq slkshareemacs-dir "/mnt/ntfs_g/slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+      )
+    )
 
 
 					; 虚拟机上的
