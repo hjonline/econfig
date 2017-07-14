@@ -18,34 +18,34 @@
 (defun yas/org-very-safe-expand ()
   (let ((yas/fallback-behavior 'return-nil)) (yas/expand)))
 
-;; (add-hook 'org-mode-hook
-;; 	  (lambda ()
-;; 	    (make-variable-buffer-local 'yas/trigger-key)
-;; 	    (setq yas/trigger-key [tab])
-;; 	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
-;; 	    (define-key yas/keymap [tab] 'yas/next-field)))
+(add-hook 'org-mode-hook
+	  (lambda ()
+	    (make-variable-buffer-local 'yas/trigger-key)
+	    (setq yas/trigger-key [tab])
+	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
+	    (define-key yas/keymap [tab] 'yas/next-field)))
 
-;; (setenv "PATH"
-;;         (concat
-;;          "/d/dev/msys64/usr/bin" ":"
-;;          "/d/dev/msys64/mingw64/bin" ":"
-;;          (getenv "PATH")
-;;          )
-;; 	)
-;; (setq exec-path (append '("d:/dev/msys64/usr/bin" "d:/dev/msys64/mingw64/bin")
-;;                         exec-path))
+(setenv "PATH"
+        (concat
+         "/d/dev/msys64/usr/bin" ":"
+         "/d/dev/msys64/mingw64/bin" ":"
+         (getenv "PATH")
+         )
+	)
+(setq exec-path (append '("d:/dev/msys64/usr/bin" "d:/dev/msys64/mingw64/bin")
+                        exec-path))
 
-;; (add-hook 'c++-mode-hook 'irony-mode)
-;; (add-hook 'c-mode-hook 'irony-mode)
-;; (add-hook 'objc-mode-hook 'irony-mode)
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
 
 ;; Windows performance tweaks
-;;
-;; (when (boundp 'w32-pipe-read-delay)
-;;   (setq w32-pipe-read-delay 0))
-;; ;; Set the buffer size to 64K on Windows (from the original 4K)
-;; (when (boundp 'w32-pipe-buffer-size)
-;;   (setq irony-server-w32-pipe-buffer-size (* 64 1024)))
+
+(when (boundp 'w32-pipe-read-delay)
+  (setq w32-pipe-read-delay 0))
+;; Set the buffer size to 64K on Windows (from the original 4K)
+(when (boundp 'w32-pipe-buffer-size)
+  (setq irony-server-w32-pipe-buffer-size (* 64 1024)))
 
 
 ;; (require 'ycmd)
