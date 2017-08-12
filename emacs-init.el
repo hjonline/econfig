@@ -140,6 +140,7 @@
 
 					; 加载 elpa 包管理器
 (require 'package)
+(setq package-archives nil)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
