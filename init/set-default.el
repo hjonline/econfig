@@ -16,8 +16,7 @@
 (modify-coding-system-alist 'process "*" 'utf-8)  
 (setq-default pathname-coding-system 'utf-8)  
 (prefer-coding-system 'utf-8)
-(setq default-process-coding-system '(utf-8 . utf-8))  
-(setq locale-coding-system 'utf-8)
+(setq default-process-coding-system '(utf-8 . utf-8))
 (setq file-name-coding-system 'utf-8) 
 (setq default-buffer-file-coding-system 'utf-8)  
 (setq slime-net-coding-system 'utf-8-unix)
@@ -40,7 +39,7 @@
 ;;启用时间显示设置，在minibuffer上面的那个杠上（忘了叫什么来着）
 (display-time-mode 1)
 ;;时间使用24小时制
-(setq display-time-24hr-format t)
+;(setq display-time-24hr-format t)
 ;;时间显示包括日期和具体时间
 (setq display-time-day-and-date t)
 
