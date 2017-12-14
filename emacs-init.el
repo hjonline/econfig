@@ -143,7 +143,7 @@
 (setq package-archives nil)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
 (add-to-list 'package-archives '("melpa-ch" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives '("gnu-ch"   . "http://elpa.emacs-china.org/gnu/"))
