@@ -80,7 +80,7 @@
     )
 
 					; Z68 上的实机 slackware 
-(if (string= system-name 'z68)
+(if (string= system-name 'z68.org)
     (progn
       (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
