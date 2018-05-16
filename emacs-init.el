@@ -72,7 +72,7 @@
 
 					;;;;;;; 实机上的 linux
 					; B75 上的实机 slackware 
-(if (string= system-name 'b75-slack)
+(if (string= system-name 'b75-slack.net)
     (progn
       (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
