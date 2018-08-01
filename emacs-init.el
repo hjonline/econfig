@@ -60,13 +60,13 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 
-					; hp g3 的 windows 10
+					; hp g3 的 windows 7
 (if (string= system-name "HPG3")
     (progn
       (setq my_dev "d:/dev")
-      (setq slkshareemacs-dir "g:/slkshare/emacs")
+      (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (setq dotstardict-dir "/cygdrive/g/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")))
 
 
