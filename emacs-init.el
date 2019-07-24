@@ -60,7 +60,7 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 
-					; hp g3 的 windows 10
+					; hp g3 的 windows 7
 (if (string= system-name "HPG3")
     (progn
       (setq my_dev "d:/dev")
