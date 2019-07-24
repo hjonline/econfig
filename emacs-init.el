@@ -64,9 +64,9 @@
 (if (string= system-name "HPG3")
     (progn
       (setq my_dev "d:/dev")
-      (setq slkshareemacs-dir "g:/slkshare/emacs")
+      (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (setq dotstardict-dir "/cygdrive/g/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")))
 
 
@@ -141,10 +141,14 @@
 					; 加载 elpa 包管理器
 (require 'package)
 (setq package-archives nil)
+(require 'gnutls)
+(add-to-list 'gnutls-trustfiles
+	     (expand-file-name
+	      "~/etc/tls/certificates/comodo.rsa.ca.intermediate.crt"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
 (add-to-list 'package-archives '("melpa-ch" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives '("gnu-ch"   . "http://elpa.emacs-china.org/gnu/"))
 
