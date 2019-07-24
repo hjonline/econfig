@@ -121,6 +121,17 @@
       )
     )
 
+					; dostyle 虚拟机上的 slackware
+(if (string= system-name 'DOSTLE-VB-XP-2)
+    (progn
+      (setq my_dev "C:/dev")
+      (setq slkshareemacs-dir "z:/emacs")
+      (setq tramp-win-exe "~/tools/ftp.exe")
+      (add-to-list 'Info-default-directory-list "c:/MinGW/msys/1.0/local/info")
+      (setq dotstardict-dir slkshareemacs-dir)
+      )
+    )
+
 
 ;;; 等待区分
 
