@@ -132,6 +132,14 @@
       )
     )
 
+					; b75 虚拟机上的 debian
+(if (string= system-name 'deb)
+    (progn
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+      )
+    )
+
 
 ;;; 等待区分
 
