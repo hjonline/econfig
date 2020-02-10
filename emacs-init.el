@@ -140,6 +140,14 @@
       )
     )
 
+					; dostyle 虚拟机上的 debian
+(if (string= system-name 'deb-1)
+    (progn
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+      )
+    )
+
 
 ;;; 等待区分
 
