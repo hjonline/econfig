@@ -1,0 +1,6 @@
+# -*- mode: Perl -*-
+# name: print Dumper
+# key: prdp
+# --
+print Dumper($1);
+$2

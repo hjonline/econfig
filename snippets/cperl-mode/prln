@@ -1,0 +1,6 @@
+# -*- mode: Perl -*-
+# name: print add next line
+# key: prln
+# --
+print $1 . "\n";
+$2
