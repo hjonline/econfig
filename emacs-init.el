@@ -278,3 +278,5 @@
 
 					;使用 iedit-mode
 (require 'set-myiedit)
+
+(require 'set-myregex)
