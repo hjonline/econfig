@@ -21,6 +21,12 @@
 (setq default-buffer-file-coding-system 'utf-8)  
 (setq slime-net-coding-system 'utf-8-unix)
 
+(when (eq system-type 'windows-nt)
+  (setq locale-coding-system 'gb18030)  ;此句保证中文字体设置有效
+  (setq w32-unicode-filenames 'nil)       ; 确保file-name-coding-system变量的设置不会无效
+  (setq file-name-coding-system 'gb18030) ; 设置文件名的编码为gb18030
+  )
+
 ; 设置打开文件的缺省路径
 (setq default-directory "~/")
 (setq user-emacs-directory dotemacs-dir)
