@@ -280,3 +280,9 @@
 (require 'set-myiedit)
 
 (require 'set-myregex)
+
+(load "mymacros")
+
+(global-set-key "\354" (quote 复制到上一行开头))
+
+(global-set-key "\333" (quote 把书名移动到行首))
