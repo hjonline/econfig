@@ -162,6 +162,7 @@
 (setq saves-dir (concat slkshareemacs-dir "/saves"))
 					; elpa 包管理器目录 
 (setq package-user-dir (concat dotemacs-dir "/elpa"))
+(setq package-gnupghome-dir (concat package-user-dir "/gnupg"))
 (setq doxymacs-dir (concat econfig-dir "/lisp/doxymacs"))
 (setq sdcv-cmd (concat "sdcv --data-dir " dotstardict-dir "/.stardict/dic -n %s %s"))
 

@@ -8,7 +8,7 @@
 ; สนำร yasnippet
 (require 'yasnippet) ;; not yasnippet-bundle
 (setq my-custom-yas-snippet-dirs (concat econfig-dir "/snippets"))
-(setq yas-snippet-dirs '(my-custom-yas-snippet-dirs yas-installed-snippets-dir))
+;(setq yas-snippet-dirs '(my-custom-yas-snippet-dirs yas-installed-snippets-dir))
 ;(yas/load-directory "~/lisp/yasnippet/snippets")
 ;;(yas/initialize)
 (yas-global-mode 1)
