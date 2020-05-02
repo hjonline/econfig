@@ -189,3 +189,6 @@
 ; Error (frameset): Font ‘tty’ is not defined
 
 (setq desktop-restore-frames nil)
+
+; 中文字数统计
+(load "ch-count-words")
