@@ -42,14 +42,14 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
 
-					; 准备室上的 windows 10
-(if (string= system-name "READYROOM")
+					; northlab 上的 windows 10
+(if (string= system-name "NORTHLAB")
     (progn
       (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (add-to-list 'Info-default-directory-list "d:/mingw/msys/1.0/local/info")))
+      (add-to-list 'Info-default-directory-list "C:/MinGw/msys/1.0/local/info")))
 
 					; 办公室的 windows 10
 (if (string= system-name "OFFICE")
