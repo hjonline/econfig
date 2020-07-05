@@ -15,7 +15,7 @@
 
 
 					;;;;;;; 实机 windows
-					; Z68 上的 windows 10
+					; Z68 上的 windows 7
 (if (string= system-name "HOME-Z68")
     (progn
       (setq my_dev "d:/dev")
@@ -24,7 +24,7 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
       (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")))
 
-					; B75 上的 windows 10
+					; B75 上的 windows 7
 (if (string= system-name "HOME-B75")
     (progn
       (setq my_dev "d:/dev")
@@ -33,7 +33,7 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")))
 
-					; 华硕 DOSTYLE 上的 windows 10
+					; 华硕 DOSTYLE 上的 windows 7
 (if (string= system-name "DOSTYLE")
     (progn
       (setq my_dev "d:/dev")
@@ -42,7 +42,7 @@
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
 
-					; northlab 上的 windows 10
+					; northlab 上的 windows 7
 (if (string= system-name "NORTHLAB")
     (progn
       (setq my_dev "d:/dev")
@@ -51,7 +51,7 @@
       (setq tramp-win-exe "~/tools/ftp.exe")
       (add-to-list 'Info-default-directory-list "C:/MinGw/msys/1.0/local/info")))
 
-					; 办公室的 windows 10
+					; 办公室的 windows 7
 (if (string= system-name "OFFICE")
     (progn
       (setq my_dev "d:/dev")
@@ -71,45 +71,6 @@
 
 
 					;;;;;;; 实机上的 linux
-					; B75 上的实机 slackware 
-(if (string= system-name 'b75-slack.net)
-    (progn
-      (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
-      (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
-
-					; Z68 上的实机 slackware 
-(if (string= system-name 'z68.org)
-    (progn
-      (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
-      (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
-
-
-					; 华硕 dostyle 上的实机 debian
-(if (string= system-name 'deb64.net)
-    (progn
-      (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
-      (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
-
-					; 华硕 dostyle 上的实机 slackware
-(if (string= system-name 'slk64.net)
-    (progn
-      (setq slkshareemacs-dir "/media/ntfs_e/slkshare/emacs")
-      (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
-                                        ; hpg3 上的实机 debian 
-(if (string= system-name 'hg-deb)
-    (progn
-      (setq slkshareemacs-dir "/mnt/ntfs_g/slkshare/emacs")
-      (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
 
 
 					; 虚拟机上的
@@ -121,13 +82,10 @@
       )
     )
 
-					; dostyle 虚拟机上的 slackware
-(if (string= system-name 'DOSTLE-VB-XP-2)
+					; dostyle vmware 虚拟机上的 slackware
+(if (string= system-name 'doslk.net)
     (progn
-      (setq my_dev "C:/dev")
-      (setq slkshareemacs-dir "z:/emacs")
-      (setq tramp-win-exe "~/tools/ftp.exe")
-      (add-to-list 'Info-default-directory-list "c:/MinGW/msys/1.0/local/info")
+      (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
       )
     )
