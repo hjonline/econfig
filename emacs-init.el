@@ -75,9 +75,9 @@
 
 					; 虚拟机上的
 					; office 虚拟机上的 slackware
-(if (string= system-name 'slk_office.net)
+(if (string= system-name 'oslk-1.net)
     (progn
-      (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
       )
     )
@@ -86,6 +86,14 @@
 (if (string= system-name 'doslk.net)
     (progn
       (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+      )
+    )
+
+					; dostyle virtualbox 虚拟机上的 slackware
+(if (string= system-name 'vdoslk.net)
+    (progn
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
       )
     )
