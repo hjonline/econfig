@@ -139,7 +139,7 @@
 (add-to-list 'gnutls-trustfiles
 	     (expand-file-name
 	      "~/etc/tls/certificates/comodo.rsa.ca.intermediate.crt"))
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
 ;; (add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
