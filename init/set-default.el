@@ -194,4 +194,4 @@
 (load "ch-count-words")
 
 ; 自动加载修改后的文件
-(global-auto-revert-modet)
+(global-auto-revert-mode t)
