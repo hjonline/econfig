@@ -166,11 +166,11 @@
         (add-to-list 'load-path name)))))
 
 ;; 使用 mozrepl
-(autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
+;; (autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
 
-(add-hook 'javascript-mode-hook 'javascript-custom-setup)
-(defun javascript-custom-setup ()
-  (moz-minor-mode 1))
+;; (add-hook 'javascript-mode-hook 'javascript-custom-setup)
+;; (defun javascript-custom-setup ()
+;;   (moz-minor-mode 1))
 
 ;; 在保存文件时自动创建目录，要用 c-x c-w 才行
 (add-hook 'before-save-hook
