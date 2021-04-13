@@ -193,7 +193,7 @@
 (require 'set-mydired)
 
 					; 自动补全
-;; (require 'set-myautocomplete)
+(require 'set-myautocomplete)
 
 					; 使用 doxymacs
 					;(require 'set-mydoxymacs)
@@ -205,29 +205,29 @@
 					;(require 'set-mytex)
 
 					; 使用 lisp
-;; (if (eq system-type 'windows-nt)
-;;     (progn
-;;       (require 'set-mylisp)
-;;       ))
+(if (eq system-type 'windows-nt)
+    (progn
+      (require 'set-mylisp)
+      ))
 
-;; (if (eq system-type 'gnu/linux)
-;;     (progn
-;;       ;;daemon时的字体
-;;       (require 'set-daemon-config)
-;;       ))
+(if (eq system-type 'gnu/linux)
+    (progn
+      ;;daemon时的字体
+      (require 'set-daemon-config)
+      ))
 
-;; (if (eq system-type 'windows-nt)
-;;     (progn
+(if (eq system-type 'windows-nt)
+    (progn
 					; 使用 msys 作为 shell
-;      (require 'set-myshell)
+     (require 'set-myshell)
 					; 使用 server mode
-      ;; (require 'set-servermode)
-      ;; ))
+      (require 'set-servermode)
+      ))
 
 					; 使用 php 模式
-					;(require 'php-mode)
-					;(require 'php-extras)
-					;(require 'php-auto-yasnippets)
+(require 'php-mode)
+(require 'php-extras)
+(require 'php-auto-yasnippets)
 
 					; 使用 newlisp 模式
 ;; (require 'mynewlisp)
@@ -241,14 +241,14 @@
   (define-key cperl-mode-map (kbd "C") nil))
 
 					;使用 ido-mode
-;; (require 'set-myido)
+(require 'set-myido)
 
 					;使用 iedit-mode
-;; (require 'set-myiedit)
+(require 'set-myiedit)
 
-;; (require 'set-myregex)
+(require 'set-myregex)
 
-;; (load "mymacros")
+(load "mymacros")
 
 ;; (global-set-key "\354" (quote 复制到上一行开头))
 
