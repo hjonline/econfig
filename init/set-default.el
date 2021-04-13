@@ -118,7 +118,7 @@
 ; Linux 下 让 emacs 与 X-Window系统共享剪贴板
 (setq x-select-enable-clipboard t) 
 
-(global-linum-mode t)
+; (global-linum-mode t)
 
 (set-scroll-bar-mode nil)
 
