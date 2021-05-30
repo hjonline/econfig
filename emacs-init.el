@@ -216,13 +216,13 @@
       (require 'set-daemon-config)
       ))
 
-(if (eq system-type 'windows-nt)
-    (progn
-					; 使用 msys 作为 shell
-     (require 'set-myshell)
-					; 使用 server mode
-      (require 'set-servermode)
-      ))
+;; (if (eq system-type 'windows-nt)
+;;     (progn
+;; 					; 使用 msys 作为 shell
+;;      (require 'set-myshell)
+;; 					; 使用 server mode
+;;       (require 'set-servermode)
+;;       ))
 
 					; 使用 php 模式
 (require 'php-mode)
