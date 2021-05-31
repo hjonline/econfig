@@ -4,6 +4,9 @@
 ;(setq slkshareemacs-dir "/media/sf_slkshare/emacs")
 ;))
 
+(setq warning-suppress-log-types '((package reinitialization)))
+(setq byte-compile-warnings '(cl-functions))
+
 (if (eq system-type 'windows-nt)
     (progn
 	      ; 使用 mingw 的 msys 的工具
