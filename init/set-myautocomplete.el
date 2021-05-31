@@ -27,8 +27,8 @@
 
 (setenv "PATH"
         (concat
-         "/d/dev/msys64/usr/bin" ":"
-         "/d/dev/msys64/mingw64/bin" ":"
+         "D:\\dev\\msys64\\usr\\bin" ";"
+         "D:\\dev\\msys64\\mingw64\\bin" ";"
          (getenv "PATH")
          )
 	)

@@ -6,7 +6,7 @@
 
 (if (eq system-type 'windows-nt)
     (progn
-					; 使用 mingw 的 msys 的工具
+	      ; 使用 mingw 的 msys 的工具
       (add-to-list 'exec-path "D:/dev/msys64/usr/bin/")
 ;      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
       (setq my_c_path "C:")
@@ -216,13 +216,13 @@
       (require 'set-daemon-config)
       ))
 
-;; (if (eq system-type 'windows-nt)
-;;     (progn
-;; 					; 使用 msys 作为 shell
-;;      (require 'set-myshell)
-;; 					; 使用 server mode
-;;       (require 'set-servermode)
-;;       ))
+(if (eq system-type 'windows-nt)
+    (progn
+					; 使用 msys 作为 shell
+     (require 'set-myshell)
+					; 使用 server mode
+      (require 'set-servermode)
+      ))
 
 					; 使用 php 模式
 (require 'php-mode)
