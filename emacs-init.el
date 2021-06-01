@@ -148,6 +148,10 @@
 ;; (add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
 (add-to-list 'package-archives '("melpa-ch" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives '("gnu-ch"   . "http://elpa.emacs-china.org/gnu/"))
+(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
+(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
+(add-to-list 'package-archives '("melpa-stable-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa-stable/"))
+(add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
 
 (package-initialize)
 
@@ -219,13 +223,13 @@
       (require 'set-daemon-config)
       ))
 
-(if (eq system-type 'windows-nt)
-    (progn
-					; 使用 msys 作为 shell
-     (require 'set-myshell)
-					; 使用 server mode
-      (require 'set-servermode)
-      ))
+;; (if (eq system-type 'windows-nt)
+;;     (progn
+;; 					; 使用 msys 作为 shell
+;;      (require 'set-myshell)
+;; 					; 使用 server mode
+;;       (require 'set-servermode)
+;;       ))
 
 					; 使用 php 模式
 (require 'php-mode)
