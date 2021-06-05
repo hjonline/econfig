@@ -44,7 +44,7 @@
       (setq my_dev "d:/dev")
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
-      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs/.stardict")
       (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
 
 					; northlab 上的 windows 7
@@ -62,7 +62,7 @@
       (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs/.stardict")
       (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
 
 					; hp g3 的 windows 7
