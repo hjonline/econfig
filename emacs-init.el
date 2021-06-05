@@ -196,7 +196,7 @@
 					;(require 'set-php-mode)
 
 					; 字典查询
-;; (require 'set-search-dictionary)
+(require 'set-search-dictionary)
 
 					; dired 模式下的一些个性化设定
 (require 'set-mydired)
