@@ -52,7 +52,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
     (find-if #'qiang-font-existsp font-list))
 (if (memq (framep (selected-frame)) '(x pc w32 win32))
     (qiang-set-font
-     '("Monaco" "Consolas" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=18"
+     '("fantasque sans mono" "Monaco" "Consolas" "DejaVu Sans Mono" "Monospace" "Courier New") ":pixelsize=18"
      '("Microsoft Yahei" "文泉驿等宽正黑" "黑体" "新宋体" "宋体")))
 
 
