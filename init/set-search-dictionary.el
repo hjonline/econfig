@@ -17,8 +17,9 @@
 ;; 						   ("xdict" . gbk2312)
 ;; 						   ("stardic" . gb2312))) 
 
-;;(require 'init-sdcv)
+(require 'init-sdcv)
 
+(setq sdcv-dictionary-data-dir (concat dotstardict-dir "/.stardict/dic"))
 (global-set-key (kbd "C-c d") 'kid-sdcv-to-buffer)
 (defun kid-sdcv-to-buffer ()
   (interactive)
@@ -46,6 +47,6 @@
                                           (delete-window)))))
            (goto-char (point-min))))))))
 		   
-;;(global-set-key (kbd "C-c s") 'sdcv-search-pointer+)
+(global-set-key (kbd "C-c s") 'sdcv-search-pointer+)
 
-;;(global-set-key (kbd "C-c S") 'sdcv-search-input)
+(global-set-key (kbd "C-c S") 'sdcv-search-input)
