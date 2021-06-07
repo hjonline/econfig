@@ -50,3 +50,5 @@
 (global-set-key (kbd "C-c s") 'sdcv-search-pointer+)
 
 (global-set-key (kbd "C-c S") 'sdcv-search-input)
+
+(setq sdcv-say-word-p t)
