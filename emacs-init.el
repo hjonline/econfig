@@ -26,7 +26,7 @@
       (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs-setup")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")))
 
 					; B75 上的 windows 7
