@@ -151,10 +151,10 @@
 ;; (add-to-list 'package-archives '("popkit" . "https://elpa.popkit.org/packages/"))
 (add-to-list 'package-archives '("melpa-ch" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives '("gnu-ch"   . "http://elpa.emacs-china.org/gnu/"))
-(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
-(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
-(add-to-list 'package-archives '("melpa-stable-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa-stable/"))
-(add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
+;; (add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
+;; (add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
+;; (add-to-list 'package-archives '("melpa-stable-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa-stable/"))
+;; (add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
 
 (package-initialize)
 
