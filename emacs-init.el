@@ -89,7 +89,7 @@
     )
 
 					; dostyle vmware 虚拟机上的 slackware
-(if (string= system-name 'doslk.net)
+(if (string= system-name 'slk-1.net)
     (progn
       (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
