@@ -99,8 +99,10 @@
 ;; 加入会话功能
 (require 'session)
 (setq session-save-file-coding-system 'utf-8-unix)
+(setq session-save-file my_session_path)
 (add-hook 'after-init-hook 'session-initialize)
 (load "desktop")
+(add-to-list 'desktop-path my_desktop_path)
 (desktop-save-mode)
 (desktop-load-default)
 ;(desktop-read)

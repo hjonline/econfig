@@ -46,7 +46,10 @@
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-      (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")))
+      (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/dostyle"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/dostyle/dostyle-session"))
+      ))
 
 					; northlab 上的 windows 7
 (if (string= system-name "NORTHLAB")
@@ -85,6 +88,8 @@
     (progn
       (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/vmware/slk-1"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/vmware/slk-1/slk-1-session"))
       )
     )
 
@@ -93,6 +98,8 @@
     (progn
       (setq slkshareemacs-dir "/mnt/hgfs/slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/vmware/slk-1"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/vmware/slk-1/slk-1-session"))
       )
     )
 
@@ -169,6 +176,9 @@
 					; Maxmizing the emacs's window
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
+(if (eq system-type 'gnu/linux)
+  (progn
+     (add-to-list 'default-frame-alist '(fullscreen . maximized))))
 
 					; 字体设置，来自 ZHUO Qiang
 					; http://emacser.com/torture-emacs.htm
