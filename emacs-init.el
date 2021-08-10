@@ -14,6 +14,7 @@
       (add-to-list 'exec-path "D:/dev/msys64/usr/bin/")
       (add-to-list 'exec-path "D:/dev/msys64/mingw64/bin/")
       (add-to-list 'exec-path "E:/soft/media/mpg123/")
+      (add-to-list 'exec-path "D:/dev/MinGW/msys/1.0/local/bin")
 ;      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
       (setq my_c_path "C:")
       ))

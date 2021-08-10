@@ -20,4 +20,4 @@
 
 
 
-(global-set-key (kbd "C-;") 'iedit-dwim)
+(global-set-key (kbd "C-M-;") 'iedit-dwim)
