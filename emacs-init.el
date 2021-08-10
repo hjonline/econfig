@@ -178,11 +178,13 @@
 					;(bbdb-initialize)
 
 					; Maxmizing the emacs's window
-(require 'maxframe)
-(add-hook 'window-setup-hook 'maximize-frame t)
+(defun maximize-frame (&optional the-frame)
+  (interactive)
+  (w32-send-sys-command 61488))
+(if (eq system-type 'windows-nt)
+    (add-hook 'window-setup-hook 'maximize-frame t))
 (if (eq system-type 'gnu/linux)
-  (progn
-     (add-to-list 'default-frame-alist '(fullscreen . maximized))))
+    (add-to-list 'default-frame-alist '(fullscreen . maximized)))
 
 					; 字体设置，来自 ZHUO Qiang
 					; http://emacser.com/torture-emacs.htm
@@ -208,7 +210,7 @@
 (require 'set-org)
 
 					; php 模式
-					;(require 'set-php-mode)
+(require 'set-php-mode)
 
 					; 字典查询
 (require 'set-search-dictionary)
@@ -247,11 +249,6 @@
 					; 使用 server mode
      (require 'set-servermode)
       ))
-
-					; 使用 php 模式
-(require 'php-mode)
-(require 'php-extras)
-(require 'php-auto-yasnippets)
 
 					; 使用 newlisp 模式
 ;; (require 'mynewlisp)
