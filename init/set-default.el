@@ -222,3 +222,13 @@
 
 ; 自动加载修改后的文件
 (global-auto-revert-mode t)
+
+; 告诉 emacs 不要提示删除这些包
+(add-hook 'after-init-hook
+  (lambda()
+    (progn
+      (add-to-list 'package-selected-packages 'iedit)
+      (add-to-list 'package-selected-packages 'monokai-theme)
+      (add-to-list 'package-selected-packages 'posframe)
+      (add-to-list 'package-selected-packages 'flymake-easy))))
+
