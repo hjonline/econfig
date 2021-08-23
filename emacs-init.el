@@ -15,6 +15,7 @@
       (add-to-list 'exec-path "D:/dev/msys64/mingw64/bin/")
       (add-to-list 'exec-path "E:/soft/media/mpg123/")
       (add-to-list 'exec-path "D:/dev/MinGW/msys/1.0/local/bin")
+	  (add-to-list 'exec-path "D:/dev/Git")
 ;      (add-to-list 'exec-path "C:/MinGw/msys/1.0/bin/")
       (setq my_c_path "C:")
       ))
@@ -68,7 +69,10 @@
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs/")
-      (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")))
+      (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/office"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/office/office-session"))
+	  ))
 
 					; hp g3 的 windows 7
 (if (string= system-name "HPG3")
