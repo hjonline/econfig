@@ -39,8 +39,11 @@
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")))
-
+      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b75"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b75/b75-session"))
+      ))
+	  
 					; 华硕 DOSTYLE 上的 windows 7
 (if (string= system-name "DOSTYLE")
     (progn
