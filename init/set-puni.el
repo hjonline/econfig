@@ -24,5 +24,5 @@
 ; 用法： 默认打开是输入状态，按空格后接内容也就是普通输入空格后再插入文字。按两次空格就进入或者退出 keypad 模式；
 ; 可以用 , . / 进行切换快捷键前缀， , 是 C- 、 . 是 M- 、 / 是 C-M- ，
 ;如果输入的那个字符所对应的前缀和当前前缀相同，就直接输入；否则切换当前前缀。
-(require 'minibuffer-keypad-mode)
-(minibuffer-keypad-mode-setup t)
+(require 'minibuffer-modifier-keys)
+(minibuffer-modifier-keys-setup t)
