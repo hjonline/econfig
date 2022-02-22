@@ -2,8 +2,8 @@
 (provide 'set-myautocomplete)
 
 ; 使用 autocomplete
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
 
 					; 使用 yasnippet
 (require 'yasnippet)

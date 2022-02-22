@@ -218,7 +218,7 @@
 (require 'set-org)
 
 					; php 模式
-(require 'set-php-mode)
+; (require 'set-php-mode)
 
 					; 字典查询
 (require 'set-search-dictionary)
