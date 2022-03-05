@@ -30,7 +30,9 @@
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
-      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")))
+      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
+	  (setq my_font_size ":pixelsize=22")
+	  ))
 
 					; B75 上的 windows 7
 (if (string= system-name "HOME-B75")
@@ -42,6 +44,7 @@
       (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b75"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b75/b75-session"))
+	  (setq my_font_size ":pixelsize=24")
       ))
 	  
 					; 华硕 DOSTYLE 上的 windows 7
@@ -54,6 +57,7 @@
       (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/dostyle"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/dostyle/dostyle-session"))
+	  (setq my_font_size ":pixelsize=24")
       ))
 
 					; northlab 上的 windows 7
@@ -63,7 +67,9 @@
       (setq slkshareemacs-dir "e:/slkshare/emacs")
       (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
       (setq tramp-win-exe "~/tools/ftp.exe")
-      (add-to-list 'Info-default-directory-list "C:/MinGw/msys/1.0/local/info")))
+      (add-to-list 'Info-default-directory-list "C:/MinGw/msys/1.0/local/info")
+	  (setq my_font_size ":pixelsize=24")
+	  ))
 
 					; 办公室的 windows 7
 (if (string= system-name "OFFICE")
@@ -75,6 +81,7 @@
       (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/office"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/office/office-session"))
+	  (setq my_font_size ":pixelsize=16")
 	  ))
 
 					; hp g3 的 windows 7
@@ -87,6 +94,7 @@
       (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/hpg3"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/hpg3/hpg3-session"))
+	  (setq my_font_size ":pixelsize=16")
 	  ))
 
 
@@ -101,8 +109,8 @@
       (setq dotstardict-dir slkshareemacs-dir)
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/vmware/slk-1"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/vmware/slk-1/slk-1-session"))
-      )
-    )
+	  (setq my_font_size ":pixelsize=22")
+     ))
 
 					; dostyle vmware 虚拟机上的 slackware
 (if (string= system-name 'slk-1.net)
@@ -111,32 +119,32 @@
       (setq dotstardict-dir slkshareemacs-dir)
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/vmware/slk-1"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/vmware/slk-1/slk-1-session"))
-      )
-    )
+	  (setq my_font_size ":pixelsize=22")
+     ))
 
 					; dostyle virtualbox 虚拟机上的 slackware
 (if (string= system-name 'vdoslk.net)
     (progn
       (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
+	  (setq my_font_size ":pixelsize=22")
+     ))
 
 					; b75 虚拟机上的 debian
 (if (string= system-name 'deb)
     (progn
       (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
+	  (setq my_font_size ":pixelsize=22")
+     ))
 
 					; dostyle 虚拟机上的 debian
 (if (string= system-name 'deb-1)
     (progn
       (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
       (setq dotstardict-dir slkshareemacs-dir)
-      )
-    )
+	  (setq my_font_size ":pixelsize=22")
+     ))
 
 
 ;;; 等待区分
@@ -218,7 +226,7 @@
 (require 'set-org)
 
 					; php 模式
-(require 'set-php-mode)
+; (require 'set-php-mode)
 
 					; 字典查询
 (require 'set-search-dictionary)
