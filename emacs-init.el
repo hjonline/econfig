@@ -57,6 +57,7 @@
       (add-to-list 'Info-default-directory-list "D:/dev/msys64/usr/share/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/dostyle"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/dostyle/dostyle-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/dostyle/.windows"))
 	  (setq my_font_size ":pixelsize=24")
       ))
 
