@@ -44,6 +44,7 @@
       (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b75"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b75/b75-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b75/.windows"))
 	  (setq my_font_size ":pixelsize=24")
       ))
 	  
@@ -71,6 +72,7 @@
       (add-to-list 'Info-default-directory-list "C:/MinGw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/northlab"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/northlab/northlab-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/northlab/.windows"))
 	  (setq my_font_size ":pixelsize=24")
 	  ))
 
@@ -84,6 +86,7 @@
       (add-to-list 'Info-default-directory-list "d:/dev/mingw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/office"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/office/office-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/office/.windows"))
 	  (setq my_font_size ":pixelsize=16")
 	  ))
 
@@ -97,6 +100,7 @@
       (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/hpg3"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/hpg3/hpg3-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/hpg3/.windows"))
 	  (setq my_font_size ":pixelsize=16")
 	  ))
 
