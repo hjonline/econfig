@@ -6,7 +6,7 @@
 
 (setq warning-suppress-log-types '((package reinitialization)))
 (setq byte-compile-warnings '(cl-functions))
-;(setq package-check-signature nil)
+(setq package-check-signature nil)
 
 (if (eq system-type 'windows-nt)
     (progn
