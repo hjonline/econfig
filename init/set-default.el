@@ -97,36 +97,36 @@
 ;; (setq diary-file "~/diary")
 
 ;; 加入会话功能
-(require 'session)
-(setq session-save-file-coding-system 'utf-8-unix)
-(setq session-save-file my_session_path)
-(add-hook 'after-init-hook 'session-initialize)
-(load "desktop")
-(add-to-list 'desktop-path my_desktop_path)
-(desktop-save-mode)
-(desktop-load-default)
+;(require 'session)
+;(setq session-save-file-coding-system 'utf-8-unix)
+;(setq session-save-file my_session_path)
+;(add-hook 'after-init-hook 'session-initialize)
+;(load "desktop")
+;(add-to-list 'desktop-path my_desktop_path)
+;(desktop-save-mode)
+;(desktop-load-default)
 ;; 在空闲时保存 desktop 但是在 daemon 模式下似乎不工作，来自 https://www.emacswiki.org/emacs/Desktop
-(defun my-desktop-save ()
-  (interactive)
-  ;; Don't call desktop-save-in-desktop-dir, as it prints a message.
-  (if (eq (desktop-owner) (emacs-pid))
-      (desktop-save desktop-dirname)))
-(add-hook 'auto-save-hook 'my-desktop-save)
+;(defun my-desktop-save ()
+;  (interactive)
+;  ;; Don't call desktop-save-in-desktop-dir, as it prints a message.
+;  (if (eq (desktop-owner) (emacs-pid))
+;      (desktop-save desktop-dirname)))
+;(add-hook 'auto-save-hook 'my-desktop-save)
 
 ;; 如果 desktop 的锁没有正常移除，则根据进程号移除它
-(defun sylvain/desktop-owner-advice (original &rest args)
-  (let ((owner (apply original args)))
-    (if (and owner (/= owner (emacs-pid)))
-        (and (car (member owner (list-system-processes)))
-             (let (cmd (attrlist (process-attributes owner)))
-               (if (not attrlist) owner
-                 (dolist (attr attrlist)
-                   (and (string= "comm" (car attr))
-                        (setq cmd (car attr))))
-                 (and cmd (string-match-p "[Ee]macs" cmd) owner))))
-      owner)))
+;(defun sylvain/desktop-owner-advice (original &rest args)
+;  (let ((owner (apply original args)))
+;    (if (and owner (/= owner (emacs-pid)))
+;        (and (car (member owner (list-system-processes)))
+;             (let (cmd (attrlist (process-attributes owner)))
+;               (if (not attrlist) owner
+;                 (dolist (attr attrlist)
+;                   (and (string= "comm" (car attr))
+;                        (setq cmd (car attr))))
+;                 (and cmd (string-match-p "[Ee]macs" cmd) owner))))
+;      owner)))
 ;; Ensure that dead system processes don't own it.
-(advice-add #'desktop-owner :around #'sylvain/desktop-owner-advice)
+;(advice-add #'desktop-owner :around #'sylvain/desktop-owner-advice)
 
 ;(desktop-read)
 
@@ -225,10 +225,9 @@
 (add-hook 'after-init-hook
   (lambda()
     (progn
-      (add-to-list 'package-selected-packages 'iedit)
       (add-to-list 'package-selected-packages 'monokai-theme)
-      (add-to-list 'package-selected-packages 'posframe)
-      (add-to-list 'package-selected-packages 'flymake-easy))))
+      (add-to-list 'package-selected-packages 'posframe))))
+
 
 ;; 保存窗口设置
 (require 'windows)

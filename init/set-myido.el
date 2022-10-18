@@ -8,15 +8,15 @@
 
 (ido-mode 1)
 
-(require 'flx-ido)
-(flx-ido-mode 1)
-(require 'ido-vertical-mode)
-(ido-vertical-mode 1)
-(require 'ido-hacks)
-(ido-hacks-mode 1)
+;(require 'flx-ido)
+;(flx-ido-mode 1)
+;(require 'ido-vertical-mode)
+;(ido-vertical-mode 1)
+;(require 'ido-hacks)
+;(ido-hacks-mode 1)
 
-(require 'ido-completing-read+)
-(ido-ubiquitous-mode 1)
+;(require 'ido-completing-read+)
+;(ido-ubiquitous-mode 1)
 
 (defadvice ido-switch-buffer (around no-confirmation activate)
   (let ((confirm-nonexistent-file-or-buffer nil))
