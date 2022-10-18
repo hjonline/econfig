@@ -97,10 +97,10 @@
 ;; (setq diary-file "~/diary")
 
 ;; 加入会话功能
-;(require 'session)
-;(setq session-save-file-coding-system 'utf-8-unix)
-;(setq session-save-file my_session_path)
-;(add-hook 'after-init-hook 'session-initialize)
+(require 'session)
+(setq session-save-file-coding-system 'utf-8-unix)
+(setq session-save-file my_session_path)
+(add-hook 'after-init-hook 'session-initialize)
 ;(load "desktop")
 ;(add-to-list 'desktop-path my_desktop_path)
 ;(desktop-save-mode)
@@ -226,8 +226,17 @@
   (lambda()
     (progn
       (add-to-list 'package-selected-packages 'monokai-theme)
-      (add-to-list 'package-selected-packages 'posframe))))
-
+      (add-to-list 'package-selected-packages 'posframe))
+	  (add-to-list 'package-selected-packages 'yasnippet)
+	  (add-to-list 'package-selected-packages 'use-package)
+	  (add-to-list 'package-selected-packages 's)
+	  (add-to-list 'package-selected-packages 'minibuffer-modifier-keys)
+	  (add-to-list 'package-selected-packages 'bind-key)
+	  (add-to-list 'package-selected-packages 'iedit)
+	  (add-to-list 'package-selected-packages 'session)
+	  ;(add-to-list 'package-selected-packages 'desktop)
+	  ;(add-to-list 'package-selected-packages ')
+	  ))
 
 ;; 保存窗口设置
 (require 'windows)

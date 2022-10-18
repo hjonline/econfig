@@ -47,6 +47,20 @@
 	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b75/.windows"))
 	  (setq my_font_size ":pixelsize=24")
       ))
+
+					; b660-m 上的 windows 11
+(if (string= system-name "HOME-B660-M")
+    (progn
+      (setq my_dev "d:/dev")
+      (setq tramp-win-exe "~/tools/ftp.exe")
+      (setq slkshareemacs-dir "e:/slkshare/emacs")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b660-m"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b660-m/b660-m-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b660-m/.windows"))
+	  (setq my_font_size ":pixelsize=24")
+      ))
 	  
 					; 华硕 DOSTYLE 上的 windows 7
 (if (string= system-name "DOSTYLE")
