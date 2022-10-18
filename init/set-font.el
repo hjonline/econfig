@@ -8,8 +8,8 @@
       nil t))
 
 (defvar font-list '("Microsoft Yahei" "文泉驿等宽正黑" "黑体" "新宋体" "宋体"))
-(require 'cl) ;; find-if is in common list package
-(find-if #'qiang-font-existsp font-list)
+(require 'cl-lib) ;; cl-find-if is in common list package
+(cl-find-if #'qiang-font-existsp font-list)
 
 (defun qiang-make-font-string (font-name font-size)
   (if (and (stringp font-size) 
@@ -25,9 +25,9 @@
 If set/leave chinese-font-size to nil, it will follow english-font-size"
 ;  (require 'cl)                         ; for find if
   (let ((en-font (qiang-make-font-string
-                  (find-if #'qiang-font-existsp english-fonts)
+                  (cl-find-if #'qiang-font-existsp english-fonts)
                   english-font-size))
-        (zh-font (font-spec :family (find-if #'qiang-font-existsp chinese-fonts)
+        (zh-font (font-spec :family (cl-find-if #'qiang-font-existsp chinese-fonts)
                             :size chinese-font-size)))
     
     ;; Set the default English font
@@ -49,7 +49,7 @@ If set/leave chinese-font-size to nil, it will follow english-font-size"
                         zh-font))))
 ;;看看是控制台还是X窗口
 (if (memq (framep (selected-frame)) '(x pc w32 win32))
-    (find-if #'qiang-font-existsp font-list))
+    (cl-find-if #'qiang-font-existsp font-list))
 (if (memq (framep (selected-frame)) '(x pc w32 win32))
     (qiang-set-font
      '("fantasque sans mono" "Monaco" "Consolas" "DejaVu Sans Mono" "Monospace" "Courier New") my_font_size

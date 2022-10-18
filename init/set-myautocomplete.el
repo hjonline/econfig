@@ -52,51 +52,50 @@
 ;; (setq exec-path (append '("d:/dev/msys64/usr/bin" "d:/dev/msys64/mingw64/bin")
 ;;                         exec-path))
 
-;; 启动 company 模式
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(add-hook 'c++-mode-hook 'company-mode)
-(add-hook 'c-mode-hook 'company-mode)
-(add-hook 'objc-mode-hook 'company-mode)
+;; ;; 启动 company 模式
+;; (require 'company)
+;; (add-hook 'after-init-hook 'global-company-mode)
+;; (add-hook 'c++-mode-hook 'company-mode)
+;; (add-hook 'c-mode-hook 'company-mode)
+;; (add-hook 'objc-mode-hook 'company-mode)
 
-(require 'flycheck)
-;;(add-hook 'after-init-hook #'global-flycheck-mode)
-;; 让 flycheck 支持 C++11
-(add-hook 'c++-mode-hook
-          (lambda () (setq flycheck-clang-language-standard "c++11")))
-;; 在 C 和 C++ 模式下打开 flycheck
-(add-hook 'c-mode-hook 'flycheck-mode)
-(add-hook 'c++-mode-hook 'flycheck-mode)
+;; (require 'flycheck)
+;; ;;(add-hook 'after-init-hook #'global-flycheck-mode)
+;; ;; 让 flycheck 支持 C++11
+;; (add-hook 'c++-mode-hook
+;;           (lambda () (setq flycheck-clang-language-standard "c++11")))
+;; ;; 在 C 和 C++ 模式下打开 flycheck
+;; (add-hook 'c-mode-hook 'flycheck-mode)
+;; (add-hook 'c++-mode-hook 'flycheck-mode)
 
-;; 配置 irony 模式
-(require 'irony)
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
-(defun my-irony-mode-hook ()
-  (define-key irony-mode-map [remap completion-at-point]
-    'irony-completion-at-point-async)
-  (define-key irony-mode-map [remap complete-symbol]
-    'irony-completion-at-point-async))
-(add-hook 'irony-mode-hook 'my-irony-mode-hook)
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-(require 'company-irony)
-(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
-(setq company-backends (delete 'company-semantic company-backends))
-(require 'company-irony-c-headers)
-(eval-after-load 'company
-  '(add-to-list
-    'company-backends '(company-irony-c-headers company-irony)))
-(setq company-idle-delay              t
-      company-minimum-prefix-length   2
-      company-show-numbers            t
-      company-tooltip-limit           20
-      company-dabbrev-downcase        nil)
-(require 'flycheck-irony)
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
-  
-(setq irony-additional-clang-options '("-std=c++11"
-                       "-ID:/dev/temp/Cpp-Demo-Project-For-Emacs-master/Cpp-Demo-Project-For-Emacs-master/my_inc"
-					   ))
+;; ;; 配置 irony 模式
+;; (require 'irony)
+;; (add-hook 'c++-mode-hook 'irony-mode)
+;; (add-hook 'c-mode-hook 'irony-mode)
+;; (add-hook 'objc-mode-hook 'irony-mode)
+;; (defun my-irony-mode-hook ()
+;;   (define-key irony-mode-map [remap completion-at-point]
+;;     'irony-completion-at-point-async)
+;;   (define-key irony-mode-map [remap complete-symbol]
+;;     'irony-completion-at-point-async))
+;; (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+;; (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;; (require 'company-irony)
+;; (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+;; (setq company-backends (delete 'company-semantic company-backends))
+;; (require 'company-irony-c-headers)
+;; (eval-after-load 'company
+;;   '(add-to-list
+;;     'company-backends '(company-irony-c-headers company-irony)))
+;; (setq company-idle-delay              t
+;;       company-minimum-prefix-length   2
+;;       company-show-numbers            t
+;;       company-tooltip-limit           20
+;;       company-dabbrev-downcase        nil)
+;; (require 'flycheck-irony)
+;; (eval-after-load 'flycheck
+;;   '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
+;; (setq irony-additional-clang-options '("-std=c++11"
+;;                        "-ID:/dev/temp/Cpp-Demo-Project-For-Emacs-master/Cpp-Demo-Project-For-Emacs-master/my_inc"
+;; 					   ))

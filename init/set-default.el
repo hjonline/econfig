@@ -36,7 +36,7 @@
 (setq eval-expression-print-length nil)
 
 ; 与 common lisp 兼容
-(require 'cl)
+(require 'cl-lib)
 
 ; scratch blank
 (setq initial-scratch-message "")
@@ -229,7 +229,6 @@
       (add-to-list 'package-selected-packages 'monokai-theme)
       (add-to-list 'package-selected-packages 'posframe)
       (add-to-list 'package-selected-packages 'flymake-easy))))
-
 
 ;; 保存窗口设置
 (require 'windows)
