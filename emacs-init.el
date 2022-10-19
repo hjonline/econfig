@@ -101,7 +101,7 @@
 	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/office"))
 	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/office/office-session"))
 	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/office/.windows"))
-	  (setq my_font_size ":pixelsize=16")
+	  (setq my_font_size ":pixelsize=18")
 	  ))
 
 					; hp g3 的 windows 7
