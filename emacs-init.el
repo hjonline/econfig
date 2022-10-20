@@ -291,7 +291,7 @@
 ;; (require 'mynewlisp)
 
 					; 使用 folding
-;; (require 'yoyo-folding)
+(require 'yoyo-folding)
 
 					; 使用 cperl 模式
 (defalias 'perl-mode 'cperl-mode)
