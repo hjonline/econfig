@@ -255,6 +255,7 @@
       (add-to-list 'package-selected-packages 'company-c-headers)
       (add-to-list 'package-selected-packages 'cmake-ide)
       (add-to-list 'package-selected-packages 'clang-format)
+      (add-to-list 'package-selected-packages 'folding)
       ;(add-to-list 'package-selected-packages ')
       )))
 
