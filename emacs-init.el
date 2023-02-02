@@ -200,9 +200,9 @@
 ;; (add-to-list 'package-archives  '("melpa-ec" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives  '("gnu-163"   . "http://mirrors.163.com/elpa/gnu/"))
 (add-to-list 'package-archives  '("melpa-163" . "http://mirrors.163.com/elpa/melpa/"))
-(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
-(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
-(add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
+;(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
+;(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
+;(add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
 
 (package-initialize)
 
