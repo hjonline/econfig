@@ -192,17 +192,17 @@
 (add-to-list 'gnutls-trustfiles
 	     (expand-file-name
 	      "~/etc/tls/certificates/comodo.rsa.ca.intermediate.crt"))
-;;(add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
-;;(add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/") t)
+;; (add-to-list 'package-archives '("melpa" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives  '("gnu-tuna"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
 (add-to-list 'package-archives  '("melpa-tuna" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"))
 ;; (add-to-list 'package-archives  '("gnu-ec"   . "http://elpa.emacs-china.org/gnu/"))
 ;; (add-to-list 'package-archives  '("melpa-ec" . "http://elpa.emacs-china.org/melpa/"))
 (add-to-list 'package-archives  '("gnu-163"   . "http://mirrors.163.com/elpa/gnu/"))
 (add-to-list 'package-archives  '("melpa-163" . "http://mirrors.163.com/elpa/melpa/"))
-;(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
-;(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
-;(add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
+(add-to-list 'package-archives '("gnu-ustc" . "http://mirrors.ustc.edu.cn/elpa/gnu/"))
+(add-to-list 'package-archives '("melpa-ustc" . "http://mirrors.ustc.edu.cn/elpa/melpa/"))
+;; (add-to-list 'package-archives '("org-ustc" . "http://mirrors.ustc.edu.cn/elpa/org/"))
 
 (package-initialize)
 
