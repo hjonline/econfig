@@ -120,6 +120,7 @@
 
 
 					;;;;;;; 实机上的 linux
+                                        ; debian
 (if (string= system-name 'tuf)
     (progn
       (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
@@ -129,6 +130,18 @@
 	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b660m-debian/.windows"))
 	  (setq my_font_size ":pixelsize=22")
      ))
+
+                                        ; gentoo
+(if (string= system-name 'tux)
+    (progn
+      (setq slkshareemacs-dir "/mnt/ntfs_e/slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b660m-gentoo"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b660m-gentoo/tux-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b660m-gentoo/.windows"))
+	  (setq my_font_size ":pixelsize=22")
+     ))
+
 
 					; 虚拟机上的
 					; office 虚拟机上的 slackware
