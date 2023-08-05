@@ -154,6 +154,18 @@
 	  (setq my_font_size ":pixelsize=22")
      ))
 
+                                        ; b660m 虚拟机上的 slackware
+(if (string= system-name 'b660m-vb-slk.net)
+    (progn
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+      (setq dotstardict-dir slkshareemacs-dir)
+          (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/b660m-vb-slk"))
+          (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/b660m-vb-slk/slk-session"))
+          (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/b660m-vb-slk/.windows"))
+          (setq my_font_size ":pixelsize=22")
+     ))
+
+
 					; dostyle vmware 虚拟机上的 slackware
 (if (string= system-name 'slk-1.net)
     (progn
