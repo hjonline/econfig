@@ -90,7 +90,7 @@
 	  (setq my_font_size ":pixelsize=24")
 	  ))
 
-					; 办公室的 windows 7
+					; 办公室的 windows 10
 (if (string= system-name "OFFICE")
     (progn
       (setq my_dev "d:/dev")
@@ -106,6 +106,20 @@
 
 					; hp g3 的 windows 7
 (if (string= system-name "HPG3")
+    (progn
+      (setq my_dev "d:/dev")
+      (setq slkshareemacs-dir "e:/slkshare/emacs")
+      (setq tramp-win-exe "~/tools/ftp.exe")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (add-to-list 'Info-default-directory-list "c:/MinGw/msys/1.0/local/info")
+	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/hpg3"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/hpg3/hpg3-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/hpg3/.windows"))
+	  (setq my_font_size ":pixelsize=16")
+	  ))
+
+					; w10上的 windows 10
+(if (string= system-name "W10")
     (progn
       (setq my_dev "d:/dev")
       (setq slkshareemacs-dir "e:/slkshare/emacs")
