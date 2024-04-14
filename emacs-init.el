@@ -135,6 +135,20 @@
 	  (setq my_font_size ":pixelsize=16")
 	  ))
 
+					; Z68 上的 windows 7
+(if (string= system-name "CRAB")
+    (progn
+      (setq my_dev "d:/dev")
+      (setq slkshareemacs-dir "e:/slkshare/emacs")
+      (setq tramp-win-exe "~/tools/ftp.exe")
+      (setq dotstardict-dir "/cygdrive/e/slkshare/emacs")
+      (add-to-list 'Info-default-directory-list "C:/mingw/msys/1.0/local/info")
+      (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/crab"))
+      (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/crab/crab-session"))
+      (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/crab/.windows"))
+      (setq my_font_size ":pixelsize=22")
+      ))
+
 
 					;;;;;;; 实机上的 linux
                                         ; debian
