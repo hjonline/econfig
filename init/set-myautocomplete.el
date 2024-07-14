@@ -53,11 +53,20 @@
 ;;                         exec-path))
 
 ;; 启动 company 模式
-;(require 'company)
-;(add-hook 'after-init-hook 'global-company-mode)
-;(add-hook 'c++-mode-hook 'company-mode)
-;(add-hook 'c-mode-hook 'company-mode)
-;(add-hook 'objc-mode-hook 'company-mode)
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'c++-mode-hook 'company-mode)
+(add-hook 'c-mode-hook 'company-mode)
+(add-hook 'objc-mode-hook 'company-mode)
+;; perl 的 company 后端
+;; 项目地址 https://github.com/CeleritasCelery/company-plsense
+;; 讨论帖  https://emacs.stackexchange.com/questions/35514/are-there-any-perl-options-for-company-mode
+;; 讨论帖  https://www.reddit.com/r/emacs/comments/71yeao/company_backend_for_perl/
+(add-to-list 'company-backends 'company-plsense)
+(add-hook 'perl-mode-hook 'company-mode)
+(add-hook 'cperl-mode-hook 'company-mode)  ; 如果你使用cperl-mode
+(setq company-idle-delay 0.1)  ; 补全触发前的延迟
+(setq company-minimum-prefix-length 2)  ; 触发补全的最小字符数
 
 ;(require 'flycheck)
 ;;;(add-hook 'after-init-hook #'global-flycheck-mode)
