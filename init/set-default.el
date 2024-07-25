@@ -177,7 +177,7 @@
 
 ;; ; 不要自动加新行
 (add-hook 'text-mode-hook
-            '(lambda ()
+            (lambda ()
                 (set (make-local-variable 'require-final-newline) nil)))
 
 ;; 把 lisp 下面的第一级目录加入 load-path
