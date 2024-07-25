@@ -332,10 +332,10 @@
 					;(require 'set-mytex)
 
 					; 使用 lisp
-;; (if (eq system-type 'windows-nt)
-;;     (progn
-;;       (require 'set-mylisp)
-;;       ))
+(if (eq system-type 'windows-nt)
+    (progn
+      (require 'set-mylisp)
+      ))
 
 (if (eq system-type 'gnu/linux)
     (progn
@@ -352,7 +352,7 @@
       ))
 
 					; 使用 newlisp 模式
-;; (require 'mynewlisp)
+(require 'mynewlisp)
 
 					; 使用 folding
 (require 'yoyo-folding)

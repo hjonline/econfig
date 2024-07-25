@@ -10,4 +10,5 @@
   (setq inferior-lisp-program "sbcl") 
   (setq slime-default-lisp 'sbcl) 
   (require 'slime-autoloads) 
-  (slime-setup '(slime-fancy)))
+  (slime-setup '(slime-fancy))
+  )
