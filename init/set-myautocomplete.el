@@ -11,15 +11,15 @@
 (yas-reload-all)
 
 ; 在 org-mode 中使用 yasnippet
-(defun yas/org-very-safe-expand ()
-  (let ((yas/fallback-behavior 'return-nil)) (yas/expand)))
+(defun yas-org-very-safe-expand ()
+  (let ((yas-fallback-behavior 'return-nil)) (yas-expand)))
 
 (add-hook 'org-mode-hook
 	  (lambda ()
-	    (make-variable-buffer-local 'yas/trigger-key)
-	    (setq yas/trigger-key [tab])
-	    (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
-	    (define-key yas/keymap [tab] 'yas/next-field)))
+	    (make-variable-buffer-local 'yas-trigger-key)
+	    (setq yas-trigger-key [tab])
+	    (add-to-list 'org-tab-first-hook 'yas-org-very-safe-expand)
+	    (define-key yas-keymap [tab] 'yas-next-field)))
 
 					; 使用 eglot 和 clangd
 ;; (require 'eglot)
