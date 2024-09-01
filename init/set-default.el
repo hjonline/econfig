@@ -259,6 +259,14 @@
       ;(add-to-list 'package-selected-packages ')
       )))
 
+;; 把 msys 的路径加入
+(setenv "PATH"
+    (concat
+     "D:\\dev\\msys64\\usr\\bin;D:\\dev\\msys64\\mingw64\\bin;E:\\slkshare\\emacs\\.emacs.d\\irony\\bin\\;"
+     (getenv "PATH")
+    )
+)
+
 ;; 保存窗口设置
 (require 'windows)
 (require 'recentf)
