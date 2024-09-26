@@ -373,3 +373,6 @@
 (load "mymacros")
 
 (require 'set-puni)
+
+;使用 window
+(require 'set-windows)
