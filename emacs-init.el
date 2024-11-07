@@ -231,6 +231,17 @@
 	  (setq my_font_size ":pixelsize=22")
      ))
 
+					; office 虚拟机上的 EndeavourOS
+(if (string= system-name 'eosofc)
+    (progn
+      (setq slkshareemacs-dir "/media/sf_slkshare/emacs")
+   	  (setq my_desktop_path (concat slkshareemacs-dir "/.emacs.d/desktop/eosofc"))
+	  (setq my_session_path (concat slkshareemacs-dir "/.emacs.d/session/eosofc/eosofc-session"))
+	  (setq my_windows_cfg (concat slkshareemacs-dir "/.emacs.d/session/eosofc/.windows"))
+      (setq dotstardict-dir slkshareemacs-dir)
+	  (setq my_font_size ":pixelsize=22")
+     ))
+
 
 ;;; 等待区分
 
